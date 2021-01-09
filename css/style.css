@@ -33,7 +33,7 @@ body {
   background-color: var(--bg-black-50);
 }
 
-body.stop-scrolling {
+body.hidden-scrolling {
   overflow-y: hidden;
 }
 
@@ -976,6 +976,11 @@ img {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.portfolio-popup .pp-details.active {
+  opacity: 1;
 }
 
 .portfolio-popup .pp-details-inner {
@@ -1001,10 +1006,12 @@ img {
   margin: 0 0 15px;
   border-bottom: 1px solid var(--bg-black-100);
   padding-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .portfolio-popup .pp-title p span {
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 .portfolio-popup .description {
@@ -1044,6 +1051,14 @@ img {
 
 .portfolio-popup .info ul li span {
   font-weight: 400;
+}
+
+.portfolio-popup .info ul li a {
+  color: var(--skin-color);
+}
+
+.portfolio-popup .info ul li a {
+  color: var(--skin-color);
 }
 
 .portfolio-popup .info ul :last-child {
